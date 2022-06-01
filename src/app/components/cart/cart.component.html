@@ -1,0 +1,8 @@
+<h1 class="empty-cart-msg" *ngIf="cartItems.length <= 0">Cart is empty</h1>
+<div class="container">
+    <cart-item *ngFor="let item of cartItems" [catrItem]="item"></cart-item>
+</div>
+
+<div>
+    <button mat-button (click)="onClear()">Clear Cart</button>
+  </div>
